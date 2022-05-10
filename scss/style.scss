@@ -1,14 +1,11 @@
 @use './reset';
 @use './base';
-@use './builder';
 @use './utils';
+@use './page';
+
+/* last call for cascade */
+@use './state';
 
 
-footer {
-	text-align: center; 
-	padding: 1em;
-	color: rgb(116, 116, 116);
-	
-	& p { font-weight: 400; }
-	& span {	font-weight: 700; }
-}
+
+

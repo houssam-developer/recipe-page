@@ -1,0 +1,57 @@
+body {
+	padding: .6em;
+}
+
+.card-cake {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2em;
+	
+	&__heading {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 32px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	&__description {
+		display: flex;
+		align-items: flex-start;
+		gap: 1em;
+
+		&__svg-wrapper {
+			
+		}
+
+		p {
+			font-family: Montserrat, sans-serif;
+			font-size: 12px;
+			font-style: italic;
+			font-weight: 500;
+			line-height: 15px;
+			letter-spacing: 0em;
+			text-align: left;
+			color: #4F4F4F;
+		}
+	}
+
+	&__image-ratio {
+		position: relative;
+		width: 100%;
+		height: 0em;
+		padding-bottom: 60%;
+		
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+			border-radius: 10px;
+		}
+	}
+}
