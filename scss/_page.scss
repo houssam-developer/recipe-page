@@ -195,6 +195,8 @@ aside {
 		display: flex;
 		flex-direction: column;		
 		gap: 1em;
+		
+		
 		li {
 			padding: .3em 0em;
 			display: flex;
@@ -206,4 +208,77 @@ aside {
 	&-cheesecake {
 
 	}
+}
+
+.instructions {
+	ol {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		list-style: none;
+		counter-reset: my-counter;
+		li {
+			counter-increment: my-counter;
+			display: flex;
+			align-items: flex-start;
+			gap: 1em;
+			
+			font-family: Montserrat;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0em;
+			text-align: left;
+
+		}
+		li::before {
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			border-radius: 6px;
+			content: counter(my-counter);
+			font-family: 'Playfair Display', serif;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 32px;
+			letter-spacing: 0em;
+			text-align: left;
+
+			background-color: #f2994a;
+			color: #fff;
+			min-width: 36px;
+			min-height: 36px;
+
+		}
+	}
+}
+
+.source {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 0em;
+	
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #BDBDBD;
+
+	a {
+		color: inherit;
+	}
+
+}
+
+
+footer {
+	text-align: center; 
+	padding: 1em;
+	color: rgb(116, 116, 116);
+	
+	& p { font-weight: 400; }
+	& span {	font-weight: 700; }
 }
