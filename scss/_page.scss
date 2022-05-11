@@ -106,7 +106,7 @@ aside {
 .preparation {
 	display: flex;
 	
-	gap: 3em;
+	gap: 4em;
 
 	&, & * {
 		font-size: .6rem;
@@ -121,7 +121,7 @@ aside {
 	&__li {
 		display: flex;
 		align-items: center;
-		gap: .6em;
+		gap: 1em;
 		&__svg {
 			width: 14px;
 			height: 14px;
@@ -138,5 +138,72 @@ aside {
 				font-weight: normal;
 			}
 		}
+	}
+}
+
+.ingredients {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+		
+	h2, h3 {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.2rem;
+		line-height: 24px;
+		letter-spacing: 0em;
+		text-align: left;
+
+	}
+
+	h2 { font-weight: 700; }
+	h3 {
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	p {
+			
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		letter-spacing: 0em;
+		text-align: left;
+		max-width: 60ch;
+	}
+
+	i {
+		font-weight: 500;
+	}
+
+	input[type=checkbox] {
+		background: #FAFAFA;
+		color: #FAFAFA;
+	
+		min-width: 21px;
+		min-height: 21px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		border: 1px solid #828282;
+		border-radius: 5px;
+
+	}
+
+	&-graham, &-cheesecake {
+		display: flex;
+		flex-direction: column;		
+		gap: 1em;
+		li {
+			padding: .3em 0em;
+			display: flex;
+			align-items: center;
+			gap: .5em;
+		}
+	}
+
+	&-cheesecake {
+
 	}
 }

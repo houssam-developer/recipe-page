@@ -24,7 +24,7 @@ body {
   /* background-color: #aff1da; */
   min-height: 100vh;
   width: 100vw;
-  background-color: #eee;
+  background-color: #fafafa;
 }
 
 body {
@@ -118,7 +118,7 @@ aside {
 
 .preparation {
   display: flex;
-  gap: 3em;
+  gap: 4em;
 }
 .preparation, .preparation * {
   font-size: 0.6rem;
@@ -131,7 +131,7 @@ aside {
 .preparation__li {
   display: flex;
   align-items: center;
-  gap: 0.6em;
+  gap: 1em;
 }
 .preparation__li__svg {
   width: 14px;
@@ -146,6 +146,60 @@ aside {
   font-weight: normal;
 }
 
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.ingredients h2, .ingredients h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ingredients h2 {
+  font-weight: 700;
+}
+.ingredients h3 {
+  font-weight: 400;
+  font-style: italic;
+}
+.ingredients p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 60ch;
+}
+.ingredients i {
+  font-weight: 500;
+}
+.ingredients input[type=checkbox] {
+  background: #FAFAFA;
+  color: #FAFAFA;
+  min-width: 21px;
+  min-height: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #828282;
+  border-radius: 5px;
+}
+.ingredients-graham, .ingredients-cheesecake {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.ingredients-graham li, .ingredients-cheesecake li {
+  padding: 0.3em 0em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
 .hidden {
   display: none;
 }
