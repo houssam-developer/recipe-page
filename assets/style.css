@@ -31,6 +31,12 @@ body {
   padding: 1.5em 0.6em;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .card-cake {
   display: flex;
   flex-direction: column;
@@ -76,7 +82,8 @@ body {
      object-fit: cover;
   border-radius: 10px;
 }
-.card-cake__footer {
+
+aside {
   display: flex;
   flex-direction: column;
   gap: 1em;
