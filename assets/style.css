@@ -29,6 +29,8 @@ body {
 
 body {
   padding: 1.5em 0.6em;
+  max-width: 1024px;
+  margin: 0em auto;
 }
 
 main {
@@ -88,6 +90,13 @@ aside {
   flex-direction: column;
   gap: 1em;
 }
+@media screen and (min-width: 768px) {
+  aside {
+    padding: 3em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 0px;
+    border-radius: 0.8em;
+  }
+}
 
 .yields {
   display: flex;
@@ -105,6 +114,17 @@ aside {
   height: 14px;
   fill: orange;
 }
+@media screen and (min-width: 768px) {
+  .yields__svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.yields__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
 .yields__heading {
   text-transform: uppercase;
   font-size: inherit;
@@ -115,10 +135,37 @@ aside {
   font-size: inherit;
   font-weight: normal;
 }
+@media screen and (min-width: 768px) {
+  .yields__p {
+    font-size: 0.9rem;
+  }
+}
+
+.ingredients-wrapper {
+  padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+@media screen and (min-width: 768px) {
+  .ingredients-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 
 .preparation {
   display: flex;
   gap: 4em;
+}
+@media screen and (min-width: 768px) {
+  .preparation {
+    flex-direction: column;
+  }
+  .preparation * {
+    font-size: 1rem;
+  }
 }
 .preparation, .preparation * {
   font-size: 0.6rem;
@@ -137,6 +184,12 @@ aside {
   width: 14px;
   height: 14px;
   fill: #4F4F4F;
+}
+@media screen and (min-width: 768px) {
+  .preparation__li__svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 .preparation__li__details__heading {
   color: #BDBDBD;
@@ -218,6 +271,9 @@ aside {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+}
+.instructions ol li p {
+  max-width: 530px;
 }
 .instructions ol li::before {
   display: flex;

@@ -1,5 +1,7 @@
 body {
 	padding: 1.5em .6em;
+	max-width: 1024px;
+	margin: 0em auto;
 }
 
 main {
@@ -61,33 +63,56 @@ main {
 			border-radius: 10px;
 		}
 	}
-
-	
 }
 
 aside {
+	
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+
+	
+	@media screen and (min-width:768px) {
+		
+		padding: 3em;
+		box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 20px 0px; 
+		border-radius: .8em;
+
+		& * {
+			
+		}
+	}
 }
 
 .yields {
+	
 	display: flex;
 	align-items: center;
 	gap: 1em;
-
+	
 	font-family: Montserrat;
 	font-size: 8px;
 	font-weight: 700;
 	line-height: 10px;
 	letter-spacing: 0em;
 	text-align: left;
-
+	
 	
 	&__svg {
 		width: 14px;
 		height: 14px;
 		fill: orange;
+
+		@media screen and (min-width:768px) {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		gap: .4em;
 	}
 
 	&__heading {
@@ -100,13 +125,42 @@ aside {
 		color: orange;
 		font-size: inherit;
 		font-weight: normal;
+
+		@media screen and (min-width:768px) {
+			font-size: .9rem;	
+		}
+	}
+	
+}
+
+.ingredients-wrapper {
+	padding: 1em 0em;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1em;
+
+	@media screen and (min-width:768px) {
+		flex-direction: row-reverse;
+		justify-content: space-between;
 	}
 }
 
+
 .preparation {
 	display: flex;
-	
 	gap: 4em;
+
+	
+	@media screen and (min-width:768px) {
+		& { 
+			flex-direction: column;
+			
+		}
+		& * {
+			font-size: 1rem;
+		}
+	}
 
 	&, & * {
 		font-size: .6rem;
@@ -126,6 +180,11 @@ aside {
 			width: 14px;
 			height: 14px;
 			fill: #4F4F4F;
+
+			@media screen and (min-width:768px) {
+				width: 24px;
+				height: 24px;
+			}
 		}
 
 		&__details {
@@ -230,6 +289,9 @@ aside {
 			letter-spacing: 0em;
 			text-align: left;
 
+			p {
+				max-width: 530px;
+			}
 		}
 		li::before {
 			display: flex;
