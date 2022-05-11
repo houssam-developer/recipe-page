@@ -58,6 +58,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #4F4F4F;
+  max-width: 320px;
 }
 .card-cake__image-ratio {
   position: relative;
@@ -74,6 +75,68 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+.card-cake__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.yields {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.yields__svg {
+  width: 14px;
+  height: 14px;
+  fill: orange;
+}
+.yields__heading {
+  text-transform: uppercase;
+  font-size: inherit;
+  color: #bdbdbd;
+}
+.yields__p {
+  color: orange;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.preparation {
+  display: flex;
+  gap: 3em;
+}
+.preparation, .preparation * {
+  font-size: 0.6rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.preparation__li {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.preparation__li__svg {
+  width: 14px;
+  height: 14px;
+  fill: #4F4F4F;
+}
+.preparation__li__details__heading {
+  color: #BDBDBD;
+}
+.preparation__li__details__p {
+  color: #333333;
+  font-weight: normal;
 }
 
 .hidden {
